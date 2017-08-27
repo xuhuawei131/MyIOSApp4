@@ -15,6 +15,7 @@
 		75DF88781F5075B200D53D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF88761F5075B200D53D4D /* LaunchScreen.storyboard */; };
 		75DF88831F5075B200D53D4D /* MyIOSApp4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF88821F5075B200D53D4D /* MyIOSApp4Tests.m */; };
 		75DF888E1F5075B200D53D4D /* MyIOSApp4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF888D1F5075B200D53D4D /* MyIOSApp4UITests.m */; };
+		75DF889D1F50820500D53D4D /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF889C1F50820500D53D4D /* BMI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		75DF88891F5075B200D53D4D /* MyIOSApp4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIOSApp4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF888D1F5075B200D53D4D /* MyIOSApp4UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyIOSApp4UITests.m; sourceTree = "<group>"; };
 		75DF888F1F5075B200D53D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DF889B1F50820500D53D4D /* BMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMI.h; sourceTree = "<group>"; };
+		75DF889C1F50820500D53D4D /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				75DF88761F5075B200D53D4D /* LaunchScreen.storyboard */,
 				75DF88791F5075B200D53D4D /* Info.plist */,
 				75DF88681F5075B200D53D4D /* Supporting Files */,
+				75DF889B1F50820500D53D4D /* BMI.h */,
+				75DF889C1F50820500D53D4D /* BMI.m */,
 			);
 			path = MyIOSApp4;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DF889D1F50820500D53D4D /* BMI.m in Sources */,
 				75DF88701F5075B200D53D4D /* ViewController.m in Sources */,
 				75DF886D1F5075B200D53D4D /* AppDelegate.m in Sources */,
 				75DF886A1F5075B200D53D4D /* main.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "BMI.h"
 @interface MyIOSApp4Tests : XCTestCase
 
 @end
@@ -27,6 +27,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    BMI* bmi=[[BMI alloc]initWithHeight:180 Weight:100 Sex:TRUE];
+   float values= [bmi bim];
+    println("values %f",values);
 }
 
 - (void)testPerformanceExample {
