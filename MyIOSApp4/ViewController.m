@@ -9,7 +9,11 @@
 #import "ViewController.h"
 #import "BMI.h"
 @interface ViewController ()
-
+{
+    UIImage* thinImage;
+    UIImage* normalImage;
+    UIImage* fatImage;
+}
 @property (weak, nonatomic) IBOutlet UILabel *textResult;
 @property (weak, nonatomic) IBOutlet UISwitch *switchSex;
 @property (weak, nonatomic) IBOutlet UITextField *editHeight;
@@ -37,14 +41,12 @@
         int level=[bmi getBmiLevel:value Sex:sex];
         UIImage* image;
         if(level<2){
-             image=[UIImage imageNamed:@"thinman.jpg"];
+            self.imageView.image=thinImage;
         }else if(level==2){
-            image=[UIImage imageNamed:@"normalman.jpg"];
+            self.imageView.image=normalImage;
         }else{
-            image=[UIImage imageNamed:@"fatman.jpg"];
+            self.imageView.image=fatImage;
         }
-        
-        self.imageView.image=image;
         
         NSString* result= [bmi getBMIResult:value Sex:sex];
         NSMutableString* mutableStr=[[NSMutableString alloc]initWithString:result];
@@ -108,7 +110,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        thinImage=[UIImage imageNamed:@"thinman.jpg"];
+        normalImage=[UIImage imageNamed:@"normalman.jpg"];
+        fatImage=[UIImage imageNamed:@"fatman.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
