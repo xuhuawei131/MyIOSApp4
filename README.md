@@ -1,9 +1,6 @@
 ## MyIOSApp4
 8-1  & 8-2<br/>
 
-
-
-
 keyboard type 软键盘的类型 可以选择 小数点类型  整数类型等<br/>
 ![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/editInputType.png)<br/>
 TextField类型中 有一个placeholder  他相当于android中的hint 提示<br/>
@@ -25,4 +22,8 @@ UIImageView 的用法<br/>
 获取图片的对象类<br/>
 UIImage* image=[UIImage imageNamed:@"normalman.jpg"]<br/>
 self.imageView.image=image;<br/>
+self.imageView.image=thinImage;<br/>
 
+因为图片比较耗时 所以我们把图片放在interface 的括号里面 就像普通的类一样<br/>
+![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/imageInstance.png)<br/>
+然后在(void)viewDidLoad 系统回调初始化图片
