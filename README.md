@@ -12,7 +12,7 @@ TextField类型中 有一个placeholder  他相当于android中的hint 提示<br
 但是根View UIView只绘制 没有事件响应事件<br/>
 ViewController的根View UIViewew 只是显示控件 只有绘画功能 没有触发回调功能 ，按住control键拖拽的时候没有正常的效果，表示UIView是没有事件功能的<br/>
 如果想触发回调 那么在Custom Class中的class ，由原来的UIView，修改成UIControl <br/>
-![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/editInputType.png)
+![image](https://github.com/xuhuawei131/MyIOSApp4/blob/master/raw/master/ScreenShots/modifyUIClass.png)
 
 关闭输入框对应的软键盘 例如editHeight 输入框<br/>
 [self.editHeight resignFirstResponder]<br/>
