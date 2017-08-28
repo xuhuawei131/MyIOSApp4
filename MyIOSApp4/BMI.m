@@ -55,22 +55,38 @@
     return self.height*self.height/10000.0*normalBmi;
 }
 
+-(int)getBmiLevel:(float)result Sex:(BOOL)isMale{
 
-
--(NSString*)getBMIResult:(float)result Sex:(BOOL)isMale{
-    
     if(!isMale){
         result=result-DISTANCE;
     }
-        if (result<=PIANSHOU_M) {
+    if (result<=PIANSHOU_M) {
+        return PIANSHOU;
+    }else if(result<=ZHENGCHANG_M){
+        return ZHENGCHANG;
+    }else if(result<=PIANPANG_M){
+        return PIANPANG;
+    }else if(result<=FEIPANG_M){
+        return FEIPANG;
+    }else if(result<=ZHOGNDU_M){
+        return ZHOGNDU;
+    }else{
+        return JIDU;
+    }
+}
+
+-(NSString*)getBMIResult:(float)result Sex:(BOOL)isMale{
+    
+    int level=[self getBmiLevel:result Sex:isMale];
+        if(level==PIANSHOU) {
             return @"偏廋";
-        }else if(result<=ZHENGCHANG_M){
+        }else if(level==ZHENGCHANG){
             return @"正常";
-        }else if(result<=PIANPANG_M){
+        }else if(level==PIANPANG){
             return @"偏胖I";
-        }else if(result<=FEIPANG_M){
+        }else if(level==FEIPANG){
             return @"肥胖II";
-        }else if(result<=ZHOGNDU_M){
+        }else if(level==ZHOGNDU){
             return @"重度肥胖III";
         }else{
             return @"极度肥胖IV";

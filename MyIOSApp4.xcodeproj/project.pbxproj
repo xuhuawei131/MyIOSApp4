@@ -16,6 +16,9 @@
 		75DF88831F5075B200D53D4D /* MyIOSApp4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF88821F5075B200D53D4D /* MyIOSApp4Tests.m */; };
 		75DF888E1F5075B200D53D4D /* MyIOSApp4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF888D1F5075B200D53D4D /* MyIOSApp4UITests.m */; };
 		75DF889D1F50820500D53D4D /* BMI.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DF889C1F50820500D53D4D /* BMI.m */; };
+		75DF88A11F53290C00D53D4D /* normalman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75DF889E1F53290C00D53D4D /* normalman.jpg */; };
+		75DF88A21F53290C00D53D4D /* thinman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75DF889F1F53290C00D53D4D /* thinman.jpg */; };
+		75DF88A31F53290C00D53D4D /* fatman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75DF88A01F53290C00D53D4D /* fatman.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		75DF888F1F5075B200D53D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75DF889B1F50820500D53D4D /* BMI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMI.h; sourceTree = "<group>"; };
 		75DF889C1F50820500D53D4D /* BMI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMI.m; sourceTree = "<group>"; };
+		75DF889E1F53290C00D53D4D /* normalman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = normalman.jpg; path = ../../../../Downloads/normalman.jpg; sourceTree = "<group>"; };
+		75DF889F1F53290C00D53D4D /* thinman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = thinman.jpg; path = ../../../../Downloads/thinman.jpg; sourceTree = "<group>"; };
+		75DF88A01F53290C00D53D4D /* fatman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fatman.jpg; path = ../../../../Downloads/fatman.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 				75DF88791F5075B200D53D4D /* Info.plist */,
 				75DF88681F5075B200D53D4D /* Supporting Files */,
 				75DF889B1F50820500D53D4D /* BMI.h */,
+				75DF889E1F53290C00D53D4D /* normalman.jpg */,
+				75DF889F1F53290C00D53D4D /* thinman.jpg */,
+				75DF88A01F53290C00D53D4D /* fatman.jpg */,
 				75DF889C1F50820500D53D4D /* BMI.m */,
 			);
 			path = MyIOSApp4;
@@ -249,8 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				75DF88781F5075B200D53D4D /* LaunchScreen.storyboard in Resources */,
+				75DF88A11F53290C00D53D4D /* normalman.jpg in Resources */,
 				75DF88751F5075B200D53D4D /* Assets.xcassets in Resources */,
 				75DF88731F5075B200D53D4D /* Main.storyboard in Resources */,
+				75DF88A31F53290C00D53D4D /* fatman.jpg in Resources */,
+				75DF88A21F53290C00D53D4D /* thinman.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

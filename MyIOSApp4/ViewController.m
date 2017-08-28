@@ -16,6 +16,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *editWeight;
 
 @property (weak, nonatomic) IBOutlet UITextView *textAdvice;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *textSex;
 
 @end
 
@@ -30,6 +34,17 @@
         BOOL sex=self.switchSex.isOn;
         BMI* bmi=[[BMI alloc]initWithHeight:height Weight:weight Sex:sex];
         float value=[bmi bim];
+        int level=[bmi getBmiLevel:value Sex:sex];
+        UIImage* image;
+        if(level<2){
+             image=[UIImage imageNamed:@"thinman.jpg"];
+        }else if(level==2){
+            image=[UIImage imageNamed:@"normalman.jpg"];
+        }else{
+            image=[UIImage imageNamed:@"fatman.jpg"];
+        }
+        
+        self.imageView.image=image;
         
         NSString* result= [bmi getBMIResult:value Sex:sex];
         NSMutableString* mutableStr=[[NSMutableString alloc]initWithString:result];
@@ -41,8 +56,31 @@
     }
     
 }
+
+- (IBAction)OnSwitchValueChange:(id)sender {
+    if(self.switchSex.isOn){
+        self.textSex.text=@"男";
+    }else{
+         self.textSex.text=@"女";
+    }
+    
+}
+
+
+
+//根view－UIControl 触发的点击回调函数
+- (IBAction)OnUIControlTouchUpInside:(id)sender {
+    //FirstResponser 输入框的第一响应者是 软键盘 ，所以resignFirstResponser 就是释放输入焦点 关闭软键盘
+    
+    [self.editHeight resignFirstResponder];
+    [self.editWeight resignFirstResponder];
+}
+
+
+
 //检查输入框的情况
 -(BOOL)checkEditTextHeight:(float)height Weight:(float)weight{
+    
     NSMutableString* errorStr=[[NSMutableString alloc]initWithString:@"错误:"];
     
     BOOL isError=FALSE;

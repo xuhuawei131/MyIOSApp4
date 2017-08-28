@@ -14,13 +14,21 @@
 #define ZHOGNDU_M 40
 
 #define DISTANCE 2
+
+#define PIANSHOU 1
+#define ZHENGCHANG 2
+#define PIANPANG 3
+#define FEIPANG 4
+#define ZHOGNDU 5
+#define JIDU 6
+
 @interface BMI : NSObject
 @property(nonatomic)float height,weight;
 @property(nonatomic)BOOL sex;
 -(instancetype)initWithHeight:(float)pHeight Weight:(float)pWeight Sex:(BOOL)pSex;
 -(float)bim;
 
-
+-(int)getBmiLevel:(float)result Sex:(BOOL)isMale;
 -(NSString*)getAdvice;
 -(NSString*)getBMIResult:(float)result Sex:(BOOL)isMale;
 
