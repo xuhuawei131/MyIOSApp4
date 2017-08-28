@@ -21,7 +21,7 @@ FirstResponser 输入框的第一响应者是 软键盘 ，所以resignFirstResp
 UIImageView 的用法<br/>
 
 首先我们学习如何导入一个图片到我们的工程中<br/>
-![如何导入图片](https://www.crifan.com/add_custom_image_picture_into_ios_project_and_use_uiimageview_to_show_that_uiimage/)<br/>
+[如何导入图片](https://www.crifan.com/add_custom_image_picture_into_ios_project_and_use_uiimageview_to_show_that_uiimage/)<br/>
 获取图片的对象类<br/>
 UIImage* image=[UIImage imageNamed:@"normalman.jpg"]<br/>
 self.imageView.image=image;<br/>
